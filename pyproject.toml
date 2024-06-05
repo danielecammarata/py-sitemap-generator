@@ -1,0 +1,21 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "py-sitemap-generator"
+version = "2024.6.6"
+authors = ["Daniele Cammarata <daniele.cammarata@outlook.com>"]
+description = "Python sitemap generator"
+readme = "README.md"
+packages = [
+  { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11.4"
+beautifulsoup4 = "^4.12.3"
+lxml = "^5.2.2"
+
+[tool.poetry.scripts]
+exec = "src.main:start"
