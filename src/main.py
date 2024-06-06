@@ -122,4 +122,4 @@ def start():
                 "Invalid URL. Please enter a valid format (e.g., https://some_url.com"
             )
         else:
-            generate_sitemap(url)
+            generate_sitemap(url.rstrip('/'))
